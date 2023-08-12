@@ -14,6 +14,7 @@ function main(){
 
     observable.subscribe(o1)
 
+    //dans cette methode on a pas besoin de implémenter une class qui implément une l'interface observer
     const annonyme:Observer={
         update: (observable: Observable) => {
             // Implémentation de la logique de mise à jour
