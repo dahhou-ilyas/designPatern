@@ -12,7 +12,9 @@ export class Reine extends Personnage{
     }
 
     combattre():void{
+        this.score+=4
         console.log('je suis rein');
         this.comportementArme?.utiliserArme()
+        console.log('ma score est '+this.score);
     }
 }

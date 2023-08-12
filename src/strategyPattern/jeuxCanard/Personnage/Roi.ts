@@ -11,7 +11,9 @@ export class Roi extends Personnage{
     }
 
     combattre():void{
+        this.score+=2
         console.log('je suis une roi');
         this.comportementArme?.utiliserArme();
+        console.log('ma score est '+this.score);
     }
 }
