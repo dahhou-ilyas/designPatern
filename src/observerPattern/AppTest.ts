@@ -13,11 +13,14 @@ function main(){
 
 
     observable.subscribe(o1)
-    observable.subscribe(o2)
-    observable.subscribe(o3)
-    observable.setEtat(55)
-    observable.setEtat(500)
-    observable.setEtat(550)
 
+    const annonyme:Observer={
+        update: (observable: Observable) => {
+            // Implémentation de la logique de mise à jour
+            console.log('Observer mis à jour annonyle');
+          }
+    }
+    observable.subscribe(annonyme)
+    observable.setEtat(22)
 }
 main()
