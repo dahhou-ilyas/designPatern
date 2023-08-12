@@ -5,6 +5,7 @@ import { Context } from "./context";
 
 function main():void{
     const context=new Context()
+    //switch des strategy
     context.process()
     console.log('---------------------');
     context.setStrategy(new strategy1)
