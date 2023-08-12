@@ -9,3 +9,4 @@ const a:ClassSingleton=ClassSingleton.getInstance()
 const b:ClassSingleton=ClassSingleton.getInstance()
 console.log(b==a);
 
+
