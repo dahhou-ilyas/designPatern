@@ -10,6 +10,8 @@ export abstract class Personnage{
         this.comportementArme=arm
     }
     
+
+    //algoritme encapsuler pour chaque strategie
     abstract combattre():void;
 
 }
