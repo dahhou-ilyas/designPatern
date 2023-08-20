@@ -1,12 +1,13 @@
 import { Componant } from "./Componenet";
 
-export class Coposite extends Componant{
+export class Folder extends Componant{
 
     private componants:Componant[]=[]
 
     constructor(name:string){
         super(name)
     }
+
 
     view(): void {
         let tab=this.indentation()
@@ -17,9 +18,11 @@ export class Coposite extends Componant{
         })
     }
 
-    addComponent(compo:Componant):void{
+    addComponent(compo:Componant):Componant{
         compo.level=this.level+1;
+        console.log(compo.level);
         this.componants.push(compo)
+        return compo
     }
     
 }
