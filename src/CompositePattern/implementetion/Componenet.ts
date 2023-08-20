@@ -1,7 +1,10 @@
+import { Folder } from "./Folder"
 
 export abstract class Componant {
     public name:string
     public level:number=0
+
+    public parent:Componant|undefined
 
     constructor(name:string){
         this.name=name

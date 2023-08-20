@@ -20,6 +20,7 @@ export class Folder extends Componant{
 
     addComponent(compo:Componant):Componant{
         compo.level=this.level+1;
+        compo.parent=this
         this.componants.push(compo)
         return compo
     }

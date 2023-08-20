@@ -18,4 +18,4 @@ f2.addComponent(file1)
 root.addComponent(f3)
 root.addComponent(file3)
 
-root.view()
+console.log(file1.parent?.name);
