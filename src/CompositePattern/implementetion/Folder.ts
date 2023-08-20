@@ -20,9 +20,17 @@ export class Folder extends Componant{
 
     addComponent(compo:Componant):Componant{
         compo.level=this.level+1;
-        console.log(compo.level);
         this.componants.push(compo)
         return compo
+    }
+
+    getCompoenet(name:string):Componant{
+        for(let i=0 ;i<this.componants.length;i++){
+            if(this.componants[i].name==name){
+                return this.componants[i]
+            }
+        }
+        throw new Error('not existe')
     }
     
 }

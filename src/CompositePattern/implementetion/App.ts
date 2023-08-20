@@ -11,12 +11,11 @@ const file2:File=new File('Test.java')
 const file3:File=new File('manga.txt')
 
 
-
 root.addComponent(f1)
 f1.addComponent(file2)
-
-f1.addComponent(f2)
-f2.addComponent(f3)
-
+root.addComponent(f2)
+f2.addComponent(file1)
+root.addComponent(f3)
+root.addComponent(file3)
 
 root.view()
