@@ -7,5 +7,7 @@ public class App {
         client.process(4,5);
         client.setStandard(new StandardImple2());
         client.process(4,5);
+        client.setStandard(new Adapter());
+        client.process(4,5);
     }
 }

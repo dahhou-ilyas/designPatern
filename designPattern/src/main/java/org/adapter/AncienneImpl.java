@@ -6,6 +6,9 @@ public class AncienneImpl {
     }
 
     public void print(double nb){
+        System.out.println("-------------------");
+        System.out.println("Ancienne Implémentation");
         System.out.println(nb);
+        System.out.println("-------------------");
     }
 }
